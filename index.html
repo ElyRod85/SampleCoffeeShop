@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <script src="https://kit.fontawesome.com/1d8da103c1.js" crossorigin="anonymous"></script>
+  <title>Eleonora Rodriguez - Portfolio Sample: Confiteria Marques</title>
+ </head>
+
+ <body>
+  
+
+<!-- NAVBAR -->
+<header id="header">
+  <a href="https://elyrod85.github.io/EleonoraRod85/" class="logo">Eleonora Rodriguez</a>
+  <div id="menutoggle">Menu</div>
+
+  <div id="navbar">
+
+    <ul>
+      <li>
+        <a id="eng" class="lang-eng">EN</a>
+      </li>
+      <li>
+        <a id="esp" class="lang-esp">ES</a>
+      </li>
+      <li><a href="https://elyrod85.github.io/EleonoraRod85/" class="eng" lang="en">Back</a></li>
+      <li><a href="https://elyrod85.github.io/EleonoraRod85/" class="esp" lang="es">Volver</a></li>
+  
+      <li class="menu-item"><a href="https://www.linkedin.com/in/eleonorarod85/" target="_blank"><i class="fa-brands fa-linkedin fa-xl"></i></a></li>
+      </ul>
+      
+  </div>
+  </header>
+
+
+
+
+<!-- HERO IMAGE -->
+
+<div class="hero-image">
+  <div class="hero-text">
+    <h1>Eleonora Rodriguez</h1>
+    <p class="esp" lang="es">Proyecto de Muestra</p>
+    <p class="eng" lang="en">Portfolio Sample</p>
+  </div>
+</div>
+
+
+
+
+<!-- MAIN CONTENTS -->
+<main>
+
+  <div class="eng" lang="en">
+      <h1 class="article-heading">Rebuilding the (WordPress) Landing Page of a Pastry Shop</h1>
+
+      <p>
+        For this personal portfolio project, I rebuilt the broken and outdated <strong>landing page of a pastry shop based in WordPress and Elementor</strong>.
+      </p>
+
+      <p>If you wish to jump right into the <strong>results</strong>, click on the buttons below:</p>
+
+      <div class="buttons">
+        <a href="sample-marques.html" target="_blank"><button>My Re-design</button></a>
+        <a href="https://www.confiteriamarques.com/" target="_blank" rel=”nofollow”><button>Original Website</button></a>
+      </div>
+
+      <p>
+        If you wish to check a small breakdown of what I took in consideration when re-designing it, keep reading!
+      </p>
+
+      <p>This is <strong>what the original website looked like</strong> when I found it:</p>
+
+      <a href="https://www.confiteriamarques.com/" target="_blank" rel=”nofollow”>
+        <img src="./images/original.png" alt="Original pastry shop WordPress lading page">
+      </a>
+
+      <p>And these were my notes at a glance:</p>
+
+      <ul>
+        <li>It's based on <strong>WordPress</strong> with the theme Twenty Twenty-One installed.</li>
+        <li><strong>Elementor and WooCommerce</strong> are installed.</li>
+        <li>There's a <strong>PHP error</strong> displayed under the footer.</li>
+        <li>The <strong>pop-up window</strong> that displays when the page is done loading is not responsive.</li>
+        <li>The site is <em>technically</em> overall responsive, but it's <strong>not optimized</strong> for low resolutions or mobile devices. This is especially noticeable in the navigation bar, which is difficult to read on mobile due to the font sizes, faces, and even colors in some areas.</li>
+        <li>The color palette is <strong>inconsistent</strong>. Yellow buttons, green and pink areas mixed everywhere, background images that don't work as intended...</li>
+        <li>Too many <strong>buttons</strong>!</li>
+        <li>Too many <strong>fonts</strong>!</li>
+        <li>Too much of <strong>everything</strong>!</li>
+        <li>There are <strong>two hero images</strong>, and both are difficult to read due to the <strong>low contrast</strong> between the colors of the background photos and the fonts.</li>
+        <li>There are several <strong>typos</strong> here and there (including the brand name WhatsApp misspelled at the top in the navigation bar), and the copywriting is <strong>not following SEO guidelines</strong>.</li>
+        <li>Quite a few sections, links, and buttons are <strong>redundant and repetitive</strong>.</li>
+        <li>The design is overall <strong>overwhelming and unclear</strong>.</li>
+      </ul>
+
+      <p>This pastry shop website is an unfortunate example of how marvelous tools such as WordPress and Elementor can only go so far in untrained hands.</p>
+
+      <p>I had some ideas on how to improve the site, but since it's WordPress-based, I would have had no way to share the results in my GitHub portfolio, since GitHub doesn't support PHP (for now) or full WordPress installations (which is understandable due to the resources it would demand from their servers). So instead, I decided to rebuild the landing page with <strong>HTML, CSS, and JavaScript</strong> so I could upload it here.</p>
+
+      <p>Considering my initial notes, these were the premises I had in mind when rebuilding the landing page:</p>
+
+      <ul>
+        <li>I wanted to respect the original <em>idea</em> and style of the site.</li>
+        <li>Two hero images? It should be <strong>just one</strong>, and it should be <em>readable</em>.</li>
+        <li>Speaking of <em>readable</em>, the <strong>fonts</strong> have to change as well. I chose Open Sans for paragraphs, Montserrat for navigation and buttons, and Lobster for titles and headings.</li>
+        <li>I removed the <strong>image slider</strong> close to the footer because having two hero images and a slider felt like a little <em>too much</em>.</li>
+        <li>Too many colors! I chose an <strong>orange color palette</strong>.</li>
+        <li>I fixed the typos I found but <strong>didn't rewrite any of their contents</strong>.</li>
+        <li>I <strong>removed redundant buttons</strong> linking to the same contents over and over again. Buttons should be special! If a design is filled with buttons everywhere, none of them really stand out.</li>
+        <li>I <strong>removed the shop embeded</strong> right into the landing page, to encourage users to navigate and view the separate catalogue itself.</li>
+        <li>I <strong>relocated the links</strong> to the Legal Disclaimer and the Terms & Conditions from the navigation bar to the footer.</li>
+        <li>I slightly <strong>extended the product features</strong> section ("allergen free," "100% gluten-free," and "vegan friendly") and <strong>got rid of the buttons while keeping the links</strong> for users that might want to know more about each feature.</li>
+        <li>The "Shop in Madrid" section featured a button that lead to another page with information about the location, opening hours, and phone number... but this information is also displayed in the footer! This section was also followed by yet <em>another</em> button that lead to information on delivery costs and delays... So I decided to <strong>get rid of the first button and embed the link on the text itself</strong>, while keeping only the second one.</li>
+        <li>Links to the two social media profiles of the shop were located in the navigation bar, the section following "Shop in Madrid," <em>and</em> the footer. I decided to <strong>keep them in the navigation bar and the footer</strong>, but removed the extra section from within the page contents.</li>
+        <li>The <strong>logo</strong> was also <em>everywhere</em> (navigation bar, hero image, <em>and</em> footer), so I decided to keep it where it matters most: at the top, over the hero image.</li>
+      </ul>
+
+      <p>Would you like to see the results?</p>
+
+      <a href="sample-marques.html" target="_blank">
+        <img src="./images/redesignEN.png" alt="My re-design">
+      </a>
+
+      <div class="buttons">
+        <a href="sample-marques.html" target="_blank"><button>See it live!</button></a>
+      </div>
+  </div>
+
+
+
+  <div class="esp" lang="es">
+    <h1 class="article-heading">Reconstruyendo la Página de Portada (en WordPress) de una Pastelería</h1>
+
+    <p>
+      Para este proyecto de muestra de mi portfolio personal, reconstruí una <strong>página de portada de una pastelería hecha en WordPress con Elementor</strong>.
+    </p>
+
+    <p>Si deseas ir directo a los <strong>resultados</strong>, clickea en los botones a continuación:</p>
+
+    <div class="buttons">
+      <a href="sample-marques.html" target="_blank"><button>Mi Rediseño</button></a>
+      <a href="https://www.confiteriamarques.com/" target="_blank" rel=”nofollow”><button>Sitio Web Original</button></a>
+    </div>
+
+    <p>
+      Si prefieres un breve desglose de las consideraciones que tomé al resideñarlo, ¡continúa leyendo!
+    </p>
+
+    <p>Así es <strong>cómo se veía el sitio original</strong> cuando lo encontré:</p>
+
+    <a href="https://www.confiteriamarques.com/" target="_blank" rel=”nofollow”>
+      <img src="./images/original.png" alt="Sitio original de la pastelería">
+    </a>
+    
+    <p>Y estas fueron mis anotaciones iniciales:</p>
+
+    <ul>
+      <li>Es un sitio web basado en <strong>WordPress</strong> con la plantilla Twenty Twenty-One instalada.</li>
+      <li>Tiene instalados los plugins <strong>Elementor y WooCommerce</strong>.</li>
+      <li>Hay un <strong>error de PHP</strong> que se muestra debajo del pie de página.</li>
+      <li>La <strong>ventana emergente</strong> que se muestra al cargar la página no es responsive (adaptativa).</li>
+      <li>El sitio es <em>tecnicamente</em> responsive en general, pero <strong>no está optimizado</strong> para resoluciones bajas ni dispositivos móviles. Esto es especialmente notable en la barra de navegación, que resulta difícil de leer en móviles debido al tamaño, estilo e incluso color de las fuentes en algunas áreas.</li>
+      <li>La paleta de colores es <strong>inconsistente</strong>. Botones amarillos, áreas verdes y rosas mezcladas por todas partes, imágenes de fondo que no funcionan como deberían...</li>
+      <li>¡Demasiados <strong>botones</strong>!</li>
+      <li>¡Demasiadas <strong>fuentes</strong>!</li>
+      <li>¡Demasiado de <strong>todo</strong>!</li>
+      <li>Hay <strong>dos imágenes de portada</strong> y ambas dificultan la lectura por el <strong>bajo contraste</strong> de colores entre las fotos de fondo y las fuentes.</li>
+      <li>Hay varios <strong>errores gramaticales</strong> dispersos (incluyendo el nombre de la marca WhatsApp mal escrito en la barra de navegación superior) y la redacción <strong>no cumple con pautas SEO idóneas</strong>.</li>
+      <li>Varias secciones, enlaces y botones son <strong>redundantes y repetitivos</strong>.</li>
+      <li>A grandes rasgos, el diseño es <strong>abrumador y poco claro</strong>.</li>
+    </ul>
+
+    <p>El sitio web de esta pastelería es un ejemplo desafortunado de cómo no se puede llegar demasiado lejos con herramientas maravillosas como WordPress y Elementor en manos no entrenadas.</p>
+
+    <p>Tenía algunas ideas sobre cómo mejorar el sitio pero, al estar basado en WordPress, no habría tenido la posibilidad de compartir los resultados en mi portfolio de GitHub, ya que GitHub no soporta PHP (por ahora) ni instalaciones completas de WordPress (lo cual es entendible debido a los recursos que demandaría de sus servidores). Por lo tanto, decidí reconstruir la página de portada con <strong>HTML, CSS y JavaScript</strong> para poder cargarla aquí.</p>
+
+    <p>Considerando mis anotaciones iniciales, estas fueron las premisas que tuve en cuenta al reconstruir la página de portada:</p>
+
+    <ul>
+      <li>Quise respetar la <em>idea</em> y el estilo original del sitio.</li>
+      <li>¿Dos imágenes de portada? Debería ser <strong>sólo una</strong>, y debería poder <em>leerse bien</em>.</li>
+      <li>Hablando de <em>leer bien</em>, las <strong>fuentes</strong> deben cambiar también. Elegí Open Sans para párrafos, Montserrat para la navegación y los botones, y Lobster para títulos y encabezados.</li>
+      <li>Quité las <strong>imágenes deslizables</strong> que se encontraban cerca del pie de página porque tener dos imágenes de portada y, además, imágenes deslizables me pareció <em>demasiado</em>.</li>
+      <li>¡Demasiados colores! Elegí una <strong>paleta de color naranja</strong>.</li>
+      <li>Corregí los errores gramaticales que encontré pero <strong>no reescribí ninguno de los contenidos</strong>.</li>
+      <li><strong>Quité botones redundantes</strong> que enlazaban a los mismos contenidos una y otra vez. ¡Los botones deberían ser especiales! Si un diseño está plagado de botones en todas partes, ninguno de ellos se destaca realmente.</li>
+      <li><strong>Quité la tienda incrustada</strong> en la misma página de portada, para incentivar a los usuarios a navegar y ver el catalogo por separado.</li>
+      <li><strong>Reubiqué en el pié de página</strong> los enlaces al Aviso Legal y los Términos y Condiciones que se encontraban en la barra de navegación.</li>
+      <li>Extendí ligeramente la <strong>sección de características de los productos</strong> ("sin alérgenos", "100% libre de gluten" y "vegan friendly"), y <strong>quité los botones aunque mantuve los enlaces</strong> para los usuarios que deseen saber más acerca de cada característica.</li>
+      <li>La sección "Tienda en Madrid" incluye un botón que lleva a otra página con datos acerca de la ubicación, los horarios de apertura y el número telefónico... ¡pero estos datos ya se muestran en el pie de página! Además, a esta sección le sigue <em>otro</em> botón que lleva a la información sobre los costos y demoras de envíos... Así que decidí <strong>quitar el primer botón e incluir el enlace dentro del texto mismo</strong>, pero manteniendo el segundo botón.</li>
+      <li>Los enlaces a los dos perfiles de redes sociales de la tienda se ubicaban en la barra de navegación, en la sección siguiente a "Tienda en Madrid" <em>y</em> en el pie de página. Decidí <strong>conservarlos en la barra de navegación y en el pie de página</strong>, pero los quité de la sección extra dentro de los contenidos de la página misma.</li>
+      <li>El <strong>logo</strong> también estaba <em>en todas partes</em> (barra de navegación, imagen de portada <em>y</em> pie de página), así que decidí conservarlo donde es más relevante: sobre la imagen de portada.</li>
+    </ul>
+
+    <p>¿Quieres ver los resultados?</p>
+
+    <a href="sample-marques.html" target="_blank">
+      <img src="./images/redesignES.png" alt="Mi rediseño">
+    </a>
+
+    <div class="buttons">
+      <a href="sample-marques.html" target="_blank"><button>¡Míralo en vivo!</button></a>
+    </div>
+  </div>
+
+</main>
+
+
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-name">
+    <p>© Eleonora Rodriguez, <script>document.write(new Date().getFullYear());</script></p>
+  </div>
+</footer>
+
+<button onclick="topFunction()" id="backButton" title="Go to top">
+  <i class="fa-solid fa-circle-up fa-2x"></i>
+</button>
+<script type="text/javascript" src="index.js"></script>
+</body>
+</html>

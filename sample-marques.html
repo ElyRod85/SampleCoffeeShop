@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="sample-marques.css">
+  <script src="https://kit.fontawesome.com/1d8da103c1.js" crossorigin="anonymous"></script>
+  <title>Confiteria Marques - Portfolio Sample by Eleonora Rodriguez</title>
+</head>
+<body>
+
+  <!-- Responsive Navbar -->
+  <header>
+    <nav>
+      <div class="topnav" id="ubaTopNav">
+        <a href="#" class="active">Principal</a>
+        <a href="#">Tienda Online</a>
+        <a href="#">Tienda en Madrid</a>
+        <a href="#">Contacto</a>
+        <a href="#"><i class="fa-solid fa-cart-shopping fa-lg"></i></a>
+        <a href="#"><i class="fa-solid fa-user fa-lg"></i></a>
+        <a href="#"><i class="fa-solid fa-phone fa-lg"></i></a>
+        <a href="#"><i class="fa-brands fa-whatsapp fa-lg"></i></a>
+        <a href="#"><i class="fa-brands fa-facebook fa-lg"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram fa-lg"></i></a>
+        <a href="javascript:void(0);" class="icon" onclick="ubaNav()">
+        <i class="fa fa-bars"></i>
+        </a>
+      </div>
+    </nav>
+  </header>
+    
+
+<!-- Hero image -->
+<div class="hero-image">
+  <div class="hero-content">
+    <img src="./images/confiteria-marques-logo.png" class="hero-logo">
+    <p>
+      <span class="hero-highlight">Pasteles, tartas, bombones, chocolates, empanadas...</span> un mundo de sabor artesanal a su alcance.
+    </p>
+    <p>
+      Pioneros desde 2010 en alimentación <span class="hero-highlight">especializada para alérgicos e intolerantes a alimentos</span>.
+    </p>
+    <a href="#"><button>Lista de Tartas</button></a>
+  </div>
+  <div class="custom-shape-divider-bottom-1660491768">
+    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" class="shape-fill"></path>
+        <path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" opacity=".5" class="shape-fill"></path>
+        <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" class="shape-fill"></path>
+    </svg>
+  </div>
+</div>
+
+<!-- Since 2010 section -->
+<div class="since2010">
+  <div class="flex-container">
+    <div class="since-text">
+        <h2>Desde 2010... sin alérgenos</h2>
+        <p>
+          Un mundo de chocolate <strong>sin alérgenos y vegano</strong>, pero con la mayor calidad del mercado le está esperando en <em>Marqués Free From</em>.
+        </p>
+        <p>
+          Desde 2010 somos pioneros especializados en la alimentación libre de alérgenos y estamos orgullosos de ofrecer la mas amplia y deliciosa gama de <strong>chocolates y bombones artesanales</strong> que pueda imaginar.
+        </p>
+        <a href="#"><button>Listado de productos</button></a>
+      </div>
+
+    <div class="since-img">
+      <img src="./images/since2010img.jpg">
+    </div>
+  </div>
+  <div class="custom-shape-divider-bottom-1660496877">
+    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" class="shape-fill"></path>
+        <path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" opacity=".5" class="shape-fill"></path>
+        <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" class="shape-fill"></path>
+    </svg>
+  </div>
+  
+</div>
+
+
+<!-- Features section -->
+<div class="features">
+  <div class="flex-container-features">
+
+    <div class="features-icon">
+      <i class="fa-solid fa-utensils fa-4x"></i>
+    </div>
+    <div class="features-text">
+      <h2>Sin Alérgenos</h2>
+      <p>
+        De la misma manera que garantizamos la <strong>ausencia de gluten</strong> en nuestras elaboraciones, tenemos protocolos de seguridad alimentaria muy exigentes para la elaboración de productos sin alérgenos.
+      </p>
+      <p>
+        <a href="#"><em>Más información...</em></a>
+      </p>
+    </div>
+  </div>
+
+  <div class="flex-container-features">
+    <div class="features-text">
+      <h2>100% Sin Gluten</h2>
+      <p>
+        En la Confitería Marqués todas nuestras elaboraciones son <strong>100% sin gluten</strong>. Desde 2011 nuestras instalaciones están libres de gluten y toda la materia prima que se recibe para elaborar nuestros pasteles, tartas, chocolates y bombones está <strong>certificada libre de gluten</strong> por sus respectivos fabricantes.
+      </p>
+      <p>
+        <a href="#"><em>Más información...</em></a>
+      </p>
+    </div>
+    <div class="features-icon">
+      <i class="fa-brands fa-pagelines fa-4x"></i>
+    </div>
+  </div>
+
+<div class="flex-container-features">
+  <div class="features-icon">
+    <i class="fa-solid fa-carrot fa-4x"></i>
+  </div>
+  <div class="features-text">
+    <h2>Vegan Friendly</h2>
+    <p>
+      Debido a nuestra especialización en alérgenos, <strong>todos</strong> los productos de nuestra tienda online y el 95% de los disponibles en la tienda física son <strong>aptos para veganos, sin trazas ni ingredientes de origen animal</strong>. Solamente mantenemos una receta elaborada con huevo y esta se realiza exclusivamente por encargo.
+    </p>
+    <p>
+      <a href="#"><em>Más información...</em></a>
+    </p>
+  </div>
+</div>
+
+
+  <div class="custom-shape-divider-bottom-1660496968">
+    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" class="shape-fill"></path>
+        <path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" opacity=".5" class="shape-fill"></path>
+        <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" class="shape-fill"></path>
+    </svg>
+  </div>
+  
+</div>
+
+
+
+<!-- Madrid shop section -->
+<div class="madridshop">
+  <div class="flex-container">
+    <div class="shop-text">
+        <h2>Tienda en Madrid</h2>
+        <p>
+          En nuestra tienda de Madrid, <a href="#">situada en el distrito de Chamberí</a>, estamos especializados en la elaboración de productos de chocolate para multi-alérgicos y disponemos de una amplia variedad de tabletas, figuras, bombones artesanos y otras elaboraciones sin gluten, leche, huevo, frutos secos ni cacahuete. Elaboramos tartas y pasteles <strong>por encargo</strong>.
+        </p>
+        <a href="#"><button>Condiciones de Envío</button></a>
+      </div>
+
+    <div class="shop-img">
+      <img src="./images/madridshop.jpg">
+    </div>
+  </div>
+  <div class="custom-shape-divider-bottom-1660501502">
+    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" class="shape-fill"></path>
+        <path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" opacity=".5" class="shape-fill"></path>
+        <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" class="shape-fill"></path>
+    </svg>
+  </div>
+</div>
+
+
+<!-- Shop footer section -->
+<div class="shopfooter">
+  <div class="flex-container-footer">
+    <div class="footer-col1">
+        <h3>Ubicación</h3>
+        <p>
+          <i class="fa-solid fa-house"></i> C/ Vallehermoso 46, 28015 Madrid
+          <br>
+          <i class="fa-solid fa-phone"></i> 91 018 19 60
+          <br>
+          <i class="fa-solid fa-envelope"></i> info@confiteriamarques.com
+          <br>
+          <i class="fa-brands fa-whatsapp"></i> 659 356 968
+        </p>
+    </div>
+
+    <div class="footer-col2">
+      <h3>Información</h3>
+      <ul>
+        <li><a href="#">Catálogo</a></li>
+        <li><a href="#">Envíos</a></li>
+        <li><a href="#">Aviso Legal</a></li>
+        <li><a href="#">Política de Privacidad</a></li>
+        <li><a href="#">Términos y Condiciones</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col3">
+      <h3>Horarios</h3>
+      <p>
+        <strong>Lunes a viernes:</strong> <br>de 10:00 a 14:30hs y de 15:30 a 19:00hs
+        <br>
+        <strong>Sábados:</strong> <br>de 10:00 a 13:00h
+        <br>
+        <strong>Domingos y Festivos:</strong> <br>cerrado por descanso
+      </p>
+    </div>
+
+    <div class="footer-col4">
+      <h3>¡Síguenos!</h3>
+      <div class="footer-icons">
+        <i class="fa-brands fa-facebook fa-3x"></i>
+        <i class="fa-brands fa-instagram fa-3x"></i>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+
+
+  <footer>
+        <div class="footer-name">
+          <p>© Portfolio Sample by Eleonora Rodriguez, <script>document.write(new Date().getFullYear());</script></p>
+        </div>
+  </footer>
+
+  <script type="text/javascript" src="sample-marques.js"></script>
+</body>
+</html>
