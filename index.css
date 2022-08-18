@@ -4,6 +4,8 @@
 
 * {
   font-family: 'Roboto', sans-serif;   
+  box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -11,22 +13,12 @@ body {
   margin: 0;
 }
 
+.dark body {
+  background-color: rgb(22, 22, 22);
+}
+
 a {
-  font-weight: 900;
-  color: rgb(133, 62, 156);
   text-decoration: none;
-}
-
-a:visited {
-  color: rgb(133, 62, 156);
-}
-
-a:hover {
-  color: rgb(184, 0, 246);
-}
-
-a:active {
-  color: rgb(184, 0, 246);
 }
 
 p, h1, h2, h3, h4, h5 {
@@ -34,11 +26,15 @@ p, h1, h2, h3, h4, h5 {
   
 }
 
+.dark h1 {
+  color: rgb(192, 192, 192);
+}
+
 h1, h2, h3, h4, h5 {
   margin-top: 30px;
   margin-bottom: 10px;
   font-weight: 900;
-  line-height: 1.5;
+  line-height: 1.4;
   font-family: 'Alegreya Sans SC', sans-serif;
   letter-spacing: 1px;
   text-transform: capitalize;
@@ -52,6 +48,14 @@ p {
   letter-spacing: 1px;
   word-spacing: 4px;
   font-family: 'Roboto', sans-serif;
+}
+
+.dark p {
+  color: rgb(192, 192, 192);
+}
+
+.dark main ul li {
+  color: rgb(192, 192, 192);
 }
 
 h5 {
@@ -71,13 +75,13 @@ h2 {
 }
 
 h1 {
-  font-size: 44px;
+  font-size: 42px;
   word-spacing: 5px;
 }
 
 @media only screen and (max-width: 800px) {
   h1 {
-    font-size: 36px;
+    font-size: 34px;
   }
 }
 
@@ -136,8 +140,11 @@ header {
   z-index: 98;
   padding: 0;
   margin: 0;
-  
-  }
+}
+
+.dark header {
+  background-color: rgb(22, 22, 22);
+}
   
 .logo {
   height: 80px;
@@ -151,18 +158,35 @@ header {
   font-family: 'Style Script', cursive;
 }
 
-header .logo:hover {
+.dark .logo {
+  color: rgb(212, 212, 212);
+}
+
+.logo:hover {
   color:rgba(0, 0, 0, 0.6);
 }
-  
-header .logo:visited {
+
+.dark .logo:hover {
+  color: rgb(212, 212, 212);
+}
+
+.logo:visited {
   color:rgba(0, 0, 0, 0.6);
 }
-  
-header .logo:active {
+
+.dark .logo:visited {
+  color: rgb(212, 212, 212);
+}
+
+.logo:active {
   color:rgba(0, 0, 0, 0.6);
 }
- 
+
+.dark .logo:active {
+  color: rgb(212, 212, 212);
+}
+
+
 #menutoggle {
   position: absolute;
   top: 0;
@@ -194,7 +218,7 @@ header .logo:active {
   #navbar {
   position: relative;
   height: 80px;
-  right: 130px;
+  right: 140px;
   background-color: rgb(241, 241, 241);
   transition: 0.5s;
   width: 0px;
@@ -208,9 +232,13 @@ header .logo:active {
   margin: 0;
   padding: 0;
   }
+
+  .dark #navbar {
+    background-color: rgb(22, 22, 22);
+  }
   
   #navbar.active {
-  width: 350px;
+  width: 400px;
   }
   
   #navbar ul {
@@ -246,7 +274,41 @@ header .logo:active {
   }
   
   
+  #navbar button {
+    height: 60px;
+    line-height: 60px;
+    padding: 0 15px;
+    color: rgb(133, 62, 156);
+    text-decoration: none;
+    font-size: 20px;
+  }
+
+  .dark #navbar button {
+    color: rgb(215, 161, 234);
+  }
   
+  .dark #navbar ul li a {
+    color: rgb(215, 161, 234);
+  }
+
+  #navbar ul li a:hover {
+    color: rgb(161, 85, 220);
+  }
+
+  #navbar button:hover {
+    color: rgb(161, 85, 220);
+  }
+
+  .dark #navbar ul li a:hover {
+    color: rgb(240, 198, 255);
+  }
+
+  .dark #navbar button:hover {
+    color: rgb(240, 198, 255);
+  }
+  
+
+
   @media (max-width: 1000px) {
   #navbar {
   position: fixed;
@@ -287,28 +349,23 @@ header .logo:active {
   font-family: 'Style Script', cursive;
   }
 
-  header .logo:hover {
-    color:rgba(0, 0, 0, 0.6);
+}
+
+  @media (max-width: 768px) {
+    #navbar ul li a {
+      font-size: 22px;
+      font-weight: 900;
+      padding: 0;
+      height: 50px;
+      }
   }
-
-  header .logo:visited {
-    color:rgba(0, 0, 0, 0.6);
-  }
-
-  header .logo:active {
-    color:rgba(0, 0, 0, 0.6);
-  }
-
-
-  }
-
 
 
 
 
 /* Hero image */
 .hero-image {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.9)), url("./images/sample.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.8)), url("./images/sample.jpg");
   height: 500px;
   width: 100%;
   background-position: center;
@@ -317,6 +374,10 @@ header .logo:active {
   position: relative;
   margin-top: 60px;
   margin-bottom: 20px;
+}
+
+.dark .hero-image {
+  background-image: linear-gradient(rgba(22, 22, 22, 0.7),rgba(22, 22, 22, 1)), url("./images/sample.jpg");
 }
 
 .hero-text {
@@ -387,9 +448,9 @@ header .logo:active {
 img {
   width: 80%;
   height: auto;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  border-radius: 10px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  border-radius: 15px;
   margin-left: auto;
   margin-right: auto;
   display: block;
@@ -472,6 +533,13 @@ img {
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
+.dark .buttons button:hover {
+  background-color: rgb(22, 22, 22);
+  color: rgb(239, 190, 255);
+  cursor: pointer;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
 @media only screen and (max-width: 700px) {
   .buttons button {
     align-content: center;
@@ -491,6 +559,12 @@ footer {
   width: 100%;
 }
 
+
+.dark footer {
+  background-color: rgb(17, 17, 17);
+}
+
+
 .footer-name p {
   font-weight: 400;
   font-family: 'Alegreya Sans SC', sans-serif;
@@ -509,6 +583,7 @@ footer {
 
 
 
+
 /* Back to top button */
 
 #backButton {
@@ -516,16 +591,24 @@ footer {
   position: fixed;
   bottom: 20px;
   right: 30px;
-  z-index: 97;
+  z-index: 98;
   border: none;
   outline: none;
-  color: rgb(78, 52, 87);
+  color: rgb(150, 97, 169);
   cursor: pointer;
   padding: 0px;
   font-size: 18px;
   background-color: none;
   background: none;
-  filter: drop-shadow(0 0 0.5rem rgb(255, 255, 255));
+}
+
+.dark #backButton {
+  color: rgb(201, 162, 213);
+  filter: none;
+}
+
+.dark #backButton i:hover {
+  color: rgb(244, 208, 255);
 }
   
 #backButton i {
@@ -539,7 +622,7 @@ footer {
 }
 
 #backButton i:hover {
-  color: rgb(21, 21, 21);
+  color: rgb(124, 124, 124);
 }
 
 .lang-eng:hover {
@@ -551,4 +634,54 @@ footer {
 }
 
 
+
+/* Dark-Light mode */
+
+:root,
+:root.light {
+  --bg-color: rgb(241, 241, 241);
+  --text-color: rgb(73, 73, 73);
+}
+
+:root.dark {
+  --bg-color: rgb(22, 22, 22);
+  --text-color: rgb(192, 192, 192);
+}
+
+body {
+background-color: var(--bg-color);
+color: var(--text-color);
+}
+
+.dark p {
+color: #d4d4d4;
+}
+
+
+.theme-btn {
+cursor: pointer;
+border: none;
+background-color: transparent;
+color: rgb(133, 62, 156);
+}
+
+.theme-btn.light {
+  display: none;
+  color: rgb(133, 62, 156);
+}
+
+.light .theme-btn.dark {
+  display: block;
+  color: rgb(133, 62, 156);
+}
+
+.dark .theme-btn.light {
+  display: block;
+  color: rgb(215, 161, 234);
+}
+
+.dark .theme-btn.dark {
+display: none;
+color: rgb(133, 62, 156);
+}
 

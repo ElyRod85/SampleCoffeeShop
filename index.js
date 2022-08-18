@@ -96,3 +96,5 @@ switch (localStorage.getItem("languageActive")) {
   }
 
 
+// Dark-Light mode
+const setTheme = theme => document.documentElement.className = theme;
