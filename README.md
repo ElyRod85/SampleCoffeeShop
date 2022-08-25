@@ -3,7 +3,7 @@
 
 I'm a Front-End Developer and content strategist! 
 
-This is my sample of a [coffee shop rework](https://elyrod85.github.io/SampleCoffeeShop/)!
+This is my sample of a [coffee shop landing page rework](https://elyrod85.github.io/SampleCoffeeShop/)!
 
 
 
